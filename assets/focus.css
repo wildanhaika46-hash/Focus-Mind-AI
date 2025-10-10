@@ -1,0 +1,50 @@
+/* Focus Mode page styling */
+.focus-container {
+  max-width: 350px;
+  margin: 2rem auto;
+  background: rgba(255,255,255,0.35);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+  backdrop-filter: blur(12px);
+  padding: 2rem 1.5rem 1rem 1.5rem;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+.timer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+#timerDisplay {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #4f8cff;
+  letter-spacing: 2px;
+}
+#startFocus, #stopFocus {
+  background: linear-gradient(90deg, #4f8cff, #aee2ff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1.2rem;
+  margin: 0 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(31,38,135,0.08);
+  transition: background 0.2s;
+}
+#startFocus:hover, #stopFocus:hover {
+  background: linear-gradient(90deg, #3a6fd8, #7fcfff);
+}
+.motivation-box {
+  background: rgba(174,226,255,0.18);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #1a2a3a;
+  margin-bottom: 1rem;
+  min-height: 48px;
+}

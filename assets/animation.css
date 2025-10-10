@@ -1,0 +1,28 @@
+/* Animations for fade-in and slide-up */
+.fade-in {
+  animation: fadeIn 0.7s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.slide-up {
+  animation: slideUp 0.7s cubic-bezier(.39,.575,.565,1.000);
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.loader-text {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #4f8cff;
+  letter-spacing: 1px;
+  animation: fadeIn 1.2s infinite alternate;
+}

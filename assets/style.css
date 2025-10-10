@@ -1,0 +1,79 @@
+/* Glassmorphism, gradients, rounded corners, subtle shadow, no images */
+body.glass-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b3cfff 0%, #f8fbff 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1a2a3a;
+  margin: 0;
+}
+.popup-container, .options-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: rgba(255,255,255,0.35);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+  backdrop-filter: blur(12px);
+  padding: 2rem 1.5rem 1rem 1.5rem;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+.ai-gradient {
+  background: linear-gradient(90deg, #4f8cff, #aee2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav button {
+  background: rgba(79,140,255,0.12);
+  border: none;
+  border-radius: 12px;
+  margin: 0.2rem 0.2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+nav button:hover {
+  background: rgba(79,140,255,0.22);
+}
+main {
+  margin-top: 1rem;
+}
+section {
+  background: rgba(255,255,255,0.25);
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(31,38,135,0.08);
+}
+footer {
+  text-align: center;
+  margin-top: 1rem;
+  color: #6a7a8a;
+}
+input, select, textarea {
+  border-radius: 8px;
+  border: 1px solid #b3cfff;
+  padding: 0.4rem 0.7rem;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.7);
+}
+button[type="submit"] {
+  background: linear-gradient(90deg, #4f8cff, #aee2ff);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0 2px 8px 0 rgba(31,38,135,0.08);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #3a6fd8, #7fcfff);
+}
