@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusMind AI - Settings</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="options-page">
+    <div class="container">
+        <header class="header">
+            <h1>Settings</h1>
+            <p>Customize your FocusMind AI experience.</p>
+        </header>
+
+        <section class="settings-section">
+            <h2>Focus Mode</h2>
+            <p>Add websites to block when Focus Mode is active.</p>
+            <div class="blocked-sites">
+                <textarea id="blockedSitesTextarea" rows="8" placeholder="e.g., youtube.com, facebook.com, twitter.com"></textarea>
+                <button id="saveBlockedSites" class="action-button">Save Block List</button>
+            </div>
+        </section>
+
+        <section class="settings-section">
+            <h2>Smart Notes</h2>
+            <p>All your saved notes are stored locally and can be managed here.</p>
+            <div id="notesList"></div>
+            <button id="clearAllNotes" class="action-button danger">Clear All Notes</button>
+        </section>
+        
+        <section class="settings-section">
+            <h2>Focus Stats</h2>
+            <p>Review your focus sessions and productivity metrics.</p>
+            <div id="focusStats">
+                <p>Total Focus Time: <span id="totalFocusTime">0 minutes</span></p>
+                <p>Distractions Blocked: <span id="distractionsBlocked">0</span></p>
+                <button id="resetStats" class="action-button">Reset Stats</button>
+            </div>
+        </section>
+
+    </div>
+    <script src="../src/options.js"></script>
+</body>
+</html>

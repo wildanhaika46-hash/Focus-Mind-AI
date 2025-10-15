@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusMind AI</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/animation.css">
+    <link rel="stylesheet" href="../assets/theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>FocusMind AI</h1>
+            <p>Your AI-powered focus companion.</p>
+        </header>
+
+        <main class="main-actions">
+            <button id="toggleFocusMode" class="action-button">
+                <span class="icon">🧘‍♂️</span>
+                <span class="text">Focus Mode</span>
+            </button>
+            <button id="summarizePage" class="action-button">
+                <span class="icon">🧠</span>
+                <span class="text">Summarize Page</span>
+            </button>
+            <button id="openSmartNotes" class="action-button">
+                <span class="icon">📝</span>
+                <span class="text">Smart Notes</span>
+            </button>
+        </main>
+
+        <div id="output" class="output-area hidden">
+            <div class="output-header">
+                <h2>AI Result</h2>
+                <button id="copyOutput" class="copy-button">Copy</button>
+            </div>
+            <div id="loader" class="loader hidden"></div>
+            <p id="outputText"></p>
+        </div>
+
+        <footer class="footer">
+            <a href="options.html" target="_blank">Settings</a>
+        </footer>
+    </div>
+    <script src="../src/popup.js"></script>
+</body>
+</html>
