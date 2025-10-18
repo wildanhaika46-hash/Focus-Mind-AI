@@ -30,7 +30,7 @@ Testing: Jest + manual user scenario testing
 ⚙️ Installation
 
 1. Clone the repository
-git clone https://github.com/wildanhaika46/Focus-Mind-AI.git
+git clone https://github.com/wildanhaika46-hash/Focus-Mind-AI.git
 2. Open chrome://extensions/
 3. Enable Developer Mode
 4. Click Load unpacked and select the project folder
